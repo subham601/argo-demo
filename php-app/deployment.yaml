@@ -13,7 +13,8 @@ spec:
         app: php-app
     spec:
       containers:
-      - name: php-container
-        image: subham601/php-app:latest   # 👈 apni image ka naam yahan likhna
-        ports:
-        - containerPort: 80
+        - name: php-app
+          image: shubham379/php-app:v1
+          ports:
+            - containerPort: 80
+

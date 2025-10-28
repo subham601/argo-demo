@@ -14,7 +14,7 @@ spec:
     spec:
       containers:
         - name: php-app
-          image: shubham379/php-app:v2
+          image: shubham379/php-app:v3
           ports:
             - containerPort: 80
 

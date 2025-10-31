@@ -4,9 +4,10 @@ metadata:
   name: php-app
   namespace: argocd
   annotations:
-    argocd-image-updater.argoproj.io/image-list: phpapp=docker.io/shubham379/php-app:v3
-    argocd-image-updater.argoproj.io/phpapp.update-strategy: digest
+    argocd-image-updater.argoproj.io/image-list: phpapp=docker.io/shubham379/php-app
+    argocd-image-updater.argoproj.io/phpapp.update-strategy: latest
     argocd-image-updater.argoproj.io/write-back-method: argocd
+
 spec:
   project: default   # 🟢 ये लाइन जोड़ी गई है
   source:
